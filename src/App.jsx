@@ -16,6 +16,7 @@ import EmptyState from "./components/EmptyState.jsx";
 const priorityOptions = ["High", "Medium", "Low"];
 
 function App() {
+  // Dispatch and state selectors
   const dispatch = useDispatch();
   const { tasks, filter } = useSelector((state) => state.tasks);
   const [editingTask, setEditingTask] = useState(null);
